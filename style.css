@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+
+:root {
+  --color-primary: #ed4d6e;
+  --color-primary-variant: #eb647f;
+  --color-bg-1: #f1c40f;
+  --color-bg-2: #f8d548;
+  --color-bg-3: #edf67d;
+  --color-bg-4: #f3ff44;
+  --color-light: #323031;
+  --color-white: hsl(0, 0%, 90%);
+
+  --container-width-lg: 88%;
+  --container-width-md: 92%;
+
+  --transition: all 400ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-bg-3);
+  color: var(--color-light);
+  line-height: 1.7;
+}
+
+h1,
+h2 {
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--color-white);
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+a {
+  color: var(--color-light);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  max-width: 2160px;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+nav {
+  height: 5rem;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.window-scrolled {
+  background-color: var(--color-bg-2);
+  border-bottom: 0.2rem solid var(--color-bg-3);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+  
+}
+.nav__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__toggle-btn {
+  display: none;
+}
+
+.nav__logo {
+  width: 7.5rem;
+}
+
+.nav__links {
+  display: flex;
+  gap: 4rem;
+}
+
+.nav__socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__socials a {
+  height: 2rem;
+  width: 2rem;
+  background: linear-gradient(
+    var(--color-primary-variant),
+    var(--color-primary)
+  );
+  border-radius: 0.5rem;
+  color: var(--color-bg-4);
+  display: grid;
+  place-items: center;
+}
+
+.nav__socials a:hover {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
