@@ -756,4 +756,44 @@ header {
 }
 
 @media screen and (max-width: 600px) {
+  .header__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header__image-lg {
+    border: none;
+  }
+
+  .header__image-lg:hover {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+  }
+
+  .header__image-lg img {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+  }
+
+  .header__head {
+    padding-top: 3rem;
+  }
+
+  .about__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about__right p {
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .footer_title {
+    font-size: 1.235rem;
+  }
+  .footer__links {
+    font-size: 1rem;
+  }
 }
