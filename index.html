@@ -13,6 +13,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
   </head>
   <body>
     <nav>
@@ -80,6 +86,7 @@
             >Let's Talk</a
           >
         </div>
+        <div></div>
       </div>
     </header>
     <div class="header__frames">
@@ -93,9 +100,71 @@
     <a
       href="mailto:tuannguyen25101999@gmail.com"
       class="contact__btn header__btn"
-      ><i class="fa-solid fa-arrow-up"></i>
-      <p>CONTACT - SEND ME AN EMAIL</p></a
     >
-    <script src="./main.js"></script>
+      <p>CONTACT ME</p></a
+    >
+
+    <section id="about">
+      <div class="container about__container">
+        <h2 class="about__title">About<br />Anh Tuan</h2>
+        <a
+          href="mailto:tuannguyen25101999@gmail.com"
+          class="contact__btn about__btn"
+        >
+          <p>CONTACT ME</p></a
+        >
+        <div class="about__left">
+          <div class="about__image">
+            <div class="about__image-bg"></div>
+            <div class="about__image-lg">
+              <img src="../images/about.jpg" alt="About Anh Tuan" />
+            </div>
+            <div class="about__image-sm">
+              <img src="../images/about.jpg" alt="About Anh Tuan" />
+            </div>
+          </div>
+        </div>
+        <div class="about__right">
+          <div class="empty about__empty"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sint
+            facere, ducimus nobis reiciendis labore dolorem rem numquam?
+            Architecto id commodi nam ullam voluptas voluptatem? Nostrum atque
+            ipsum esse voluptatem!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+            dicta similique, perspiciatis hic praesentium officiis voluptatem,
+            dolores ipsam ea, adipisci eveniet. Enim labore odit sit omnis
+            ratione voluptatem similique natus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            adipisci nihil laborum harum! Possimus, enim a nulla illum quod hic
+            magnam dignissimos, laudantium dolore quae, dolorum recusandae
+            excepturi cupiditate commodi!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container gallery__container swiper mySwiper">
+        <div class="gallery__head">
+          <h2 class="gallery__title">My Gallery</h2>
+          <div class="empty gallery__empty"></div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+          maiores sit, optio illum cupiditate quo. Nulla hic unde minima dolores
+          eligendi atque maxime repudiandae dicta voluptas aperiam, provident
+          dolorem voluptatem!
+        </p>
+        <div class="swiper-wrapper">
+          <article class="swiper-slide"><img src="" /></article>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
   </body>
 </html>
